@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="ee22" type="move_robot" name="move_robot"  output="screen">
+    </node>
+</launch>
