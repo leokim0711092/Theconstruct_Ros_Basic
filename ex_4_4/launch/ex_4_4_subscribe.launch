@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="ex_4_4" type="topic_odom" name="odom_subscriber" output="screen" />
+</launch>
