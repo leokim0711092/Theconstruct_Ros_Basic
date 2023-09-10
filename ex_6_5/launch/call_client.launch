@@ -1,0 +1,3 @@
+<launch>
+    <node pkg = "ex_6_5" type = "ex_6_5_call_client" name ="service_move_bb8_in_circle_client" output="screen"/>
+</launch>
