@@ -1,0 +1,3 @@
+<launch>
+    <node pkg = "ex_6_3" type = "ex_6_3_server" name = "service_server" output ="screen"/>
+</launch>
