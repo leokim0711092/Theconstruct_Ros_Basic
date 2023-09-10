@@ -1,0 +1,4 @@
+
+<launch>
+    <node pkg="ex_8_6" type="move_drone" name="drone_action_client" output="screen" />
+</launch>
