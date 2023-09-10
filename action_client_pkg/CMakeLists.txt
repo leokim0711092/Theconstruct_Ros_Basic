@@ -135,6 +135,8 @@ include_directories(
 add_executable(ardrone_action_client src/ardrone_action_client.cpp)
 add_executable(wait_for_result_test src/wait_for_result_test.cpp)
 add_executable(no_wait_for_result_test src/no_wait_for_result_test.cpp)
+add_executable(cancel_goal_test src/cancel_goal_test.cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -147,6 +149,7 @@ add_executable(no_wait_for_result_test src/no_wait_for_result_test.cpp)
 add_dependencies(ardrone_action_client ${ardrone_action_client_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(wait_for_result_test ${wait_for_result_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(no_wait_for_result_test ${no_wait_for_result_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(cancel_goal_test ${cancel_goal_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(ardrone_action_client 
@@ -156,6 +159,9 @@ target_link_libraries(wait_for_result_test
   ${catkin_LIBRARIES}
 )
 target_link_libraries(no_wait_for_result_test 
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(cancel_goal_test 
   ${catkin_LIBRARIES}
 )
 #############
