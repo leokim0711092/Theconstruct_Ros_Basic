@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find trajectory_by_name)/launch/start_service.launch" />
+    <node pkg = "service_client_pkg" type = "simple_service_client" name = "service_client" output = "screen"/>
+</launch>
