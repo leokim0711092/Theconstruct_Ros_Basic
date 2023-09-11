@@ -1,0 +1,3 @@
+<launch>
+    <node pkg = "action_server_pkg" type = "fibonacci_action_server" name = "fibonacci" output = "screen"/>
+</launch>
